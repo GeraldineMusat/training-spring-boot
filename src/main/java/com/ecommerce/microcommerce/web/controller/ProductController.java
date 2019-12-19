@@ -79,6 +79,14 @@ public class ProductController {
         });
         return marges;
     }
+    
+    // Affiche les produits tries par ordre croissant avec leur nom
+    @RequestMapping(value = "/ProduitsTries", method = RequestMethod.GET)
+	public List<Product> trierProduitsParOrdreAlphabetique() {
+
+    	List<Product> produits = productDao.findAllByOrderByNomAsc();
+		return produits;
+	}
 
     //ajouter un produit
     @PostMapping(value = "/Produits")
