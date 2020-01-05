@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-@Api( description="API pour es opérations CRUD sur les produits.")
+@Api( description="API pour les opérations CRUD sur les produits.")
 
 @RestController
 public class ProductController {
